@@ -13,5 +13,5 @@ Clone and test project
 - Run cd challenge_openai
 - Open in editor
 - Run npm install
-- Go to .env file and fill API Key with your own.
+- Create .env file at project root and write REACT_APP_OPENAI_API_KEY= then add your API key. (Do not add commas nor semi-colon)
 - Run npm run start
