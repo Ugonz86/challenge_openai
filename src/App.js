@@ -11,7 +11,7 @@ function App() {
   const [response, setResponse] = useState("... Await response");
   const [responses, setResponses] = useState([]);
 
-  const onFormSubmit = (e) => {
+  async function onFormSubmit(e) {
     e.preventDefault();
 
     const formData = new FormData(e.target),
@@ -19,11 +19,13 @@ function App() {
 
     const configuration = new Configuration({
       apiKey: process.env.REACT_APP_OPENAI_API_KEY,
+      
     });
 
     const openai = new OpenAIApi(configuration);
-
-    openai.createCompletion("text-curie-001", {
+    console.log(configuration);
+    console.log(process.env.REACT_APP_OPENAI_API_KEY);
+    openai.createCompletion("text-davinci-002", {
       prompt: `Write a description for ${formDataObj.query}.`,
       temperature: 1,
       max_tokens: 150,
@@ -52,13 +54,13 @@ function App() {
       <Paper className="paper">
       <form onSubmit={onFormSubmit} >
           <TextField 
-          // className = "textField"
           id="outlined-basic"
           multiline
           fullWidth
           name="query"
           label="Enter Prompt"
           variant="outlined"
+          onChange={(e) => setHeading(e.target.value)}
           />
           <Button
             type="submit"
@@ -79,7 +81,7 @@ function App() {
 
         {responses.map((res) => {
           return (
-            <Card className="card">
+            <Card className="card" key={res}>
               <p>{res.heading}</p>
               <p>{res.response}</p>
             </Card>
