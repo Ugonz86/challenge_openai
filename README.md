@@ -1,10 +1,17 @@
 # GH-Pages deployed web app
 
-[Front End Developer Intern Challenge by Uriel Gonzalez](https://ugonz86.github.io/challenge_openai).
+### [Front End Developer Intern Challenge by Uriel Gonzalez](https://ugonz86.github.io/challenge_openai).
 
 Notes:
 - Current error: 401, api key security related
-- Only on deployed version
-- Error 401
-- Best practices for api security have been applied(env variables,.env, gitignore, etc).
+- Locally the projects works perfectly, but when the project is deployed, the api key seems compromised and Open AI rotates the API Key.
+- Best practices for api security have been applied (env variables,.env, gitignore, etc).
 - Fix in progress
+
+Clone and test project
+- In command line run git clone https://github.com/Ugonz86/challenge_openai.git 
+- Run cd challenge_openai
+- Open in editor
+- Run npm install
+- Go to .env file and fill API Key with your own.
+- Run npm run start
