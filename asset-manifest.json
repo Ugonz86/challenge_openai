@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/challenge_openai/static/css/main.caa29cbd.css",
-    "main.js": "/challenge_openai/static/js/main.804bb527.js",
+    "main.js": "/challenge_openai/static/js/main.fd16c0bc.js",
     "static/js/787.4aa24645.chunk.js": "/challenge_openai/static/js/787.4aa24645.chunk.js",
     "index.html": "/challenge_openai/index.html",
     "main.caa29cbd.css.map": "/challenge_openai/static/css/main.caa29cbd.css.map",
-    "main.804bb527.js.map": "/challenge_openai/static/js/main.804bb527.js.map",
+    "main.fd16c0bc.js.map": "/challenge_openai/static/js/main.fd16c0bc.js.map",
     "787.4aa24645.chunk.js.map": "/challenge_openai/static/js/787.4aa24645.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.caa29cbd.css",
-    "static/js/main.804bb527.js"
+    "static/js/main.fd16c0bc.js"
   ]
 }
