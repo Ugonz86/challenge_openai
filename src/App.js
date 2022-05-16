@@ -23,9 +23,7 @@ function App() {
     });
 
     const openai = new OpenAIApi(configuration);
-    console.log(configuration);
-    console.log(process.env.REACT_APP_OPENAI_API_KEY);
-    openai.createCompletion("text-davinci-002", {
+    openai.createCompletion("text-curie-001", {
       prompt: `Write a description for ${formDataObj.query}.`,
       temperature: 1,
       max_tokens: 150,
